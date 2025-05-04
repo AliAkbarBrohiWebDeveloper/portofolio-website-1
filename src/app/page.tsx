@@ -1,4 +1,4 @@
-import Services from '@/components/projects'
+// import Services from '@/components/projects'
 import Skills from '@/components/skills'
 import React from 'react'
 import AboutPage from './About/page'
@@ -10,7 +10,7 @@ function page() {
   return (
     <div>
       {/* <Hero/> */}
-    <Services/>
+    {/* <Services/> */}
     <Skills/>
     <AboutPage/>
     <Contact/>
