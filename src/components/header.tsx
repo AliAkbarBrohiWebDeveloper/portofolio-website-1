@@ -1,5 +1,3 @@
-
-
 import Link from 'next/link'
 import React from 'react'
 import { Menu } from 'lucide-react'
@@ -13,71 +11,70 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet"
 
-
 const Header = () => {
   return (
-    <section>
-      
-        <header className="sticky top-0 z-50 shadow-lg px-4">
-          <main className="flex justify-between items-center px-6 py-3 h-20">
-            {/* Left side: Title */}
-            <div>
-              <h1 className="text-2xl font-bold">Ali Akbar Brohi</h1>
-            </div>
+    <section className="w-full">
+      <header className="sticky top-0 z-50 shadow-lg bg-white">
+        <main className="max-w-7xl mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8 py-3 h-20">
+          {/* Left: Logo / Title */}
+          <div>
+            <h1 className="text-2xl font-bold">Ali Akbar Brohi</h1>
+          </div>
 
-            {/* Navigation Links (Desktop) */}
-            <ul className="hidden md:flex space-x-8">
-              <li>
-                <Link href="/" className="text-lg font-semibold hover:text-gray-400 transition duration-300">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link href="/About" className="text-lg font-semibold hover:text-gray-400 transition duration-300">
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link href="/Contact" className="text-lg font-semibold hover:text-gray-400 transition duration-300">
-                  Contact
-                </Link>
-              </li>
-            </ul>
+          {/* Desktop Nav Links */}
+          <ul className="hidden md:flex space-x-6 lg:space-x-8">
+            <li>
+              <Link href="/" className="text-lg font-medium hover:text-gray-500 transition duration-300">
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link href="/About" className="text-lg font-medium hover:text-gray-500 transition duration-300">
+                About
+              </Link>
+            </li>
+            <li>
+              <Link href="/Contact" className="text-lg font-medium hover:text-gray-500 transition duration-300">
+                Contact
+              </Link>
+            </li>
+          </ul>
 
-            {/* Mobile Menu Button */}
-            <Sheet>
-              <SheetTrigger className="md:hidden text-3xl">
-                <Menu />
-              </SheetTrigger>
+          {/* Mobile Menu (Hamburger + Sheet Drawer) */}
+          <Sheet>
+            <SheetTrigger className="md:hidden text-gray-700">
+              <Menu className="w-7 h-7" />
+            </SheetTrigger>
 
-              <SheetContent side="left" className="">
-                <SheetHeader>
-                  <SheetTitle className="text-2xl font-semibold text-center mb-4">Ali Akbar Brohi</SheetTitle>
-                  <SheetDescription>
-                    <ul className="flex flex-col gap-y-6">
+            <SheetContent side="left" className="w-64 sm:w-72">
+              <SheetHeader>
+                <SheetTitle className="text-2xl font-bold text-center mt-4 mb-6">Ali Akbar Brohi</SheetTitle>
+                <SheetDescription asChild>
+                  <nav>
+                    <ul className="flex flex-col gap-y-6 text-center">
                       <li>
-                        <Link href="/" className="text-xl font-bold hover:text-gray-400 transition duration-300">
+                        <Link href="/" className="text-xl font-semibold hover:text-gray-500 transition duration-300">
                           Home
                         </Link>
                       </li>
                       <li>
-                        <Link href="/About" className="text-xl font-bold hover:text-gray-400 transition duration-300">
+                        <Link href="/About" className="text-xl font-semibold hover:text-gray-500 transition duration-300">
                           About
                         </Link>
                       </li>
                       <li>
-                        <Link href="/Contact" className="text-xl font-bold hover:text-gray-400 transition duration-300">
+                        <Link href="/Contact" className="text-xl font-semibold hover:text-gray-500 transition duration-300">
                           Contact
                         </Link>
                       </li>
                     </ul>
-                  </SheetDescription>
-                </SheetHeader>
-              </SheetContent>
-            </Sheet>
-          </main>
-        </header>
-    
+                  </nav>
+                </SheetDescription>
+              </SheetHeader>
+            </SheetContent>
+          </Sheet>
+        </main>
+      </header>
     </section>
   )
 }
