@@ -71,9 +71,6 @@
 
 
 
-
-
-
 "use client"
 import React from 'react';
 import Typewriter from 'typewriter-effect';
@@ -84,7 +81,7 @@ const Hero = () => {
   const header = "I am Ali Akbar Brohi \n Frontend Web Developer";
 
   return (
-    <section className="bg-gradient-to-r from-teal-500 to-blue-500 py-16 px-4 sm:px-6 lg:px-8">
+    <section className="bg-gradient-to-r from-teal-500 to-blue-500 py-16 px-4 sm:px-6 lg:px-8 w-full sm:w-auto">
       <Wrapper>
         <main className="flex flex-col-reverse md:flex-row items-center justify-between gap-10 md:gap-16" data-aos="zoom-in-down">
           
