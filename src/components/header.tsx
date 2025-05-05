@@ -16,7 +16,7 @@ import {
 
 const Header = () => {
   return (
-    <section className='w-auto'>
+    <section>
       <header className="sticky top-0 z-50 shadow-lg bg-white">
         <main className="max-w-7xl mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8 py-3 h-20 mt-5">
           {/* Logo */}
@@ -51,7 +51,7 @@ const Header = () => {
 
             <SheetContent side="left" className="w-64 sm:w-72 bg-white">
               <SheetHeader>
-                <SheetTitle className="text-2xl font-bold text-center mt-4">Ali Akbar Brohi</SheetTitle>
+                <SheetTitle className="text-1xl font-bold text-center mt-4">Ali Akbar Brohi</SheetTitle>
                 <SheetDescription asChild>
                   <nav className="mt-6">
                     <ul className="flex flex-col gap-y-12 text-center">

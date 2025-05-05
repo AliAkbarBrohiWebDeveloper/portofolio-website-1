@@ -5,7 +5,7 @@ import { FaLinkedin, FaFacebook, FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from '
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-10 px-5">
+    <footer className="bg-gray-900 text-white py-10 px-5 mt-9">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
 
         {/* Contact Info */}
