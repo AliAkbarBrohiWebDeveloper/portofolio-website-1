@@ -2,7 +2,6 @@
 
 import Image from 'next/image'
 import React from 'react'
-
 import Wrapper from '@/components/Wrapper'
 
 const AboutPage = () => {
@@ -23,7 +22,7 @@ const AboutPage = () => {
             </p>
 
             {/* Hire Me Button */}
-            <button className='mt-8 py-3 px-8 bg-teal-500 rounded-lg text-white text-lg font-semibold hover:scale-105 duration-300 hover:shadow-lg'>
+            <button className='mt-8 py-3 px-8 bg-teal-600 hover:bg-yellow-400 rounded-lg text-white text-lg font-semibold hover:scale-105 duration-300 hover:shadow-lg'>
               Hire Me
             </button>
           </div>
