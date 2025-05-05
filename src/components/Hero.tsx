@@ -14,7 +14,7 @@ const Hero = () => {
       <Wrapper>
         <main className="flex flex-col-reverse md:flex-row items-center justify-between gap-10 md:gap-16" data-aos="zoom-in-down">
           
-          {/* Text Section */}
+       
           <div className="w-full md:w-1/2 text-center md:text-left">
             <h1 className="text-black font-bold text-3xl sm:text-4xl md:text-5xl whitespace-pre-line leading-tight">
               <Typewriter
@@ -38,7 +38,7 @@ const Hero = () => {
               </button>
 
               <a 
-                href="/Ali_Akbar_Brohi_CV.pdf"
+                href="/Resume Builder2.pdf"
                 download
                 className="py-2 px-6 bg-teal-600 hover:bg-yellow-400 text-white text-base sm:text-lg font-semibold rounded-2xl shadow-lg  transition-all duration-300 transform hover:scale-105"
               >
