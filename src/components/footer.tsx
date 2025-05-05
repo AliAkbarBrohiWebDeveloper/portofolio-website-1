@@ -19,7 +19,7 @@ const Footer = () => {
         {/* About */}
         <div>
           <h2 className="text-xl font-bold mb-4">About This Site</h2>
-          <p className="text-sm">This is my personal portfolio website built with React and Tailwind CSS. Showcasing my skills, projects, and contact information.</p>
+          <p className="text-sm">This is my personal portfolio website built with Next Js  and Tailwind CSS. Showcasing my skills, projects, and contact information.</p>
         </div>
 
         {/* Social Links */}
@@ -27,7 +27,7 @@ const Footer = () => {
           <h2 className="text-xl font-bold mb-4">Follow Me</h2>
           <div className="flex justify-center md:justify-start gap-5 text-3xl">
             <a href="https://www.linkedin.com/in/ali-akbar-brohi-510971300/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 transition-all"><FaLinkedin /></a>
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-all"><FaFacebook /></a>
+            <a href="https://www.facebook.com/share/14qdkaWEdY/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-all"><FaFacebook /></a>
           </div>
         </div>
       </div>

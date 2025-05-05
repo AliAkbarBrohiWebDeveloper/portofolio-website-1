@@ -18,7 +18,7 @@ const Header = () => {
   return (
     <section>
       <header className="sticky top-0 z-50 shadow-lg bg-white">
-        <main className="max-w-7xl mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8 py-3 h-20 mt-5">
+        <main className="max-w-7xl mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8 py-3 h-20 ">
           {/* Logo */}
           <div>
             <h1 className="text-2xl font-bold">Ali AKBAR BROHI</h1>
