@@ -17,7 +17,7 @@ const Hero = () => {
        
           <div className="w-full md:w-1/2 text-center md:text-left">
             <h1 className="text-black font-bold text-3xl sm:text-4xl md:text-5xl whitespace-pre-line leading-tight">
-              <h1 className='text-6xl text-yellow-300'><span className='text-white'>HI ,I&apos;M</span> ALI AKBAR BROHI</h1>
+              <h1 className='text-3xl md:text-5xl text-yellow-300'><span className='text-white'>HI ,I&apos;M</span> ALI AKBAR BROHI</h1>
               <Typewriter
                 options={{
                   strings: ["FRONTEND DEVELOPER","PROGAMMER","CODER","WEB DEVELOPER"],

@@ -42,12 +42,12 @@ const Skills = () => {
     <Wrapper>
       <main className="mt-16">
         <div>
-          <h5 className="text-center text-4xl font-extrabold text-gray-800 underline mb-10">
+          <h5 className="text-center text-4xl font-extrabold  text-teal-600  underline">
             Skills
           </h5>
         </div>
 
-        <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 lg:gap-16">
+        <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 lg:gap-16 mt-7">
           {SkillsSection.map((item, i) => (
             <div
               key={i}

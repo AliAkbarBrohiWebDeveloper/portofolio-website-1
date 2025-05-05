@@ -54,19 +54,19 @@ const Header = () => {
                 <SheetTitle className="text-2xl font-bold text-center mt-4">Ali Akbar Brohi</SheetTitle>
                 <SheetDescription asChild>
                   <nav className="mt-6">
-                    <ul className="flex flex-col gap-y-6 text-center">
+                    <ul className="flex flex-col gap-y-12 text-center">
                       <li>
-                        <Link href="/" className="text-xl font-semibold hover:text-gray-500 transition duration-300">
+                        <Link href="/" className="text-xl font-bold  hover:text-yellow-600 hover:border-b-5 border-yellow-600  transition duration-300">
                           Home
                         </Link>
                       </li>
                       <li>
-                        <Link href="/About" className="text-xl font-semibold hover:text-gray-500 transition duration-300">
+                        <Link href="/About" className="text-xl font-bold  hover:text-yellow-600 hover:border-b-5 border-yellow-600  transition duration-300">
                           About
                         </Link>
                       </li>
                       <li>
-                        <Link href="/Contact" className="text-xl font-semibold hover:text-gray-500 transition duration-300">
+                        <Link href="/Contact" className="text-xl font-bold  hover:text-yellow-600 hover:border-b-5 border-yellow-600  transition duration-300">
                           Contact
                         </Link>
                       </li>
