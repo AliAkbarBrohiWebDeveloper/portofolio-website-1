@@ -34,14 +34,14 @@ const Hero = () => {
 
             {/* Buttons */}
             <div className="mt-8 flex flex-col sm:flex-row justify-center md:justify-start gap-4">
-              <button className="py-2 px-6 bg-teal-600 hover:bg-yellow-400 text-white text-base sm:text-lg font-semibold rounded-2xl shadow-lg  transition-all duration-300 transform hover:scale-105">
+              <button className="py-2 px-6 bg-teal-600 hover:bg-black text-white text-base sm:text-lg font-bold rounded-2xl shadow-lg  transition-all duration-300 transform hover:scale-105">
                 View My Work
               </button>
 
               <a 
                 href="/Resume Builder2.pdf"
                 download
-                className="py-2 px-6 bg-teal-600 hover:bg-yellow-400 text-white text-base sm:text-lg font-semibold rounded-2xl shadow-lg  transition-all duration-300 transform hover:scale-105"
+                className="py-2 px-6 bg-teal-600 hover:bg-black text-white text-base sm:text-lg font-bold rounded-2xl shadow-lg  transition-all duration-300 transform hover:scale-105"
               >
                 Download CV
               </a>
