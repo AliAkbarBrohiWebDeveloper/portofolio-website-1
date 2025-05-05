@@ -18,26 +18,26 @@ const Header = () => {
   return (
     <section className='w-auto'>
       <header className="sticky top-0 z-50 shadow-lg bg-white">
-        <main className="max-w-7xl mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8 py-3 h-20">
+        <main className="max-w-7xl mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8 py-3 h-20 mt-5">
           {/* Logo */}
           <div>
-            <h1 className="text-2xl font-bold">Ali Akbar Brohi</h1>
+            <h1 className="text-2xl font-bold">Ali AKBAR BROHI</h1>
           </div>
 
          
-          <ul className="hidden md:flex space-x-6 lg:space-x-8">
+          <ul className="hidden md:flex space-x-6 lg:space-x-8 ">
             <li>
-              <Link href="/" className="text-lg font-medium hover:text-gray-500 transition duration-300">
+              <Link href="/" className="text-lg font-bold hover:text-yellow-600 hover:border-b-5 border-yellow-600 transition duration-300">
                 HOME
               </Link>
             </li>
             <li>
-              <Link href="/About" className="text-lg font-medium hover:text-gray-500 transition duration-300">
+              <Link href="/About" className="text-lg font-bold  hover:text-yellow-600 hover:border-b-5 border-yellow-600  transition duration-300">
                 ABOUT
               </Link>
             </li>
             <li>
-              <Link href="/Contact" className="text-lg font-medium hover:text-gray-500 transition duration-300">
+              <Link href="/Contact" className="text-lg font-bold  hover:text-yellow-600 hover:border-b-5 border-yellow-600  transition duration-300">
                 CONTACT
               </Link>
             </li>

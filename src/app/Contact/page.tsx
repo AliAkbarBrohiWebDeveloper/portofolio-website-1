@@ -1,12 +1,11 @@
 
-
 "use client";
 import React, { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { supabase } from "@/lib/supabaseClient"; 
-
+import { supabase } from "@/lib/supabaseClient";
 import Wrapper from '@/components/Wrapper';
+import { FaUser, FaEnvelope, FaPhoneAlt, FaCommentDots } from 'react-icons/fa';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -24,7 +23,7 @@ const Contact = () => {
     }));
   };
 
-  const handleSubmit = async (e:React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     const { error } = await supabase
@@ -40,83 +39,100 @@ const Contact = () => {
   };
 
   useEffect(() => {
-    AOS.init({
-      duration: 1000,
-      once: true,
-    });
+    AOS.init({ duration: 1000, once: true });
   }, []);
 
   return (
-    <section className="mt-16">
+    <section className="mt-20">
       <Wrapper>
-        <form onSubmit={handleSubmit} className="text-center flex flex-col items-center py-8 px-6 rounded-xl shadow-lg bg-white" data-aos="flip-left">
-          <fieldset className="w-full max-w-lg border-4 border-teal-500 rounded-xl p-6">
-            <legend className="font-bold text-3xl text-teal-500 underline mb-6">Contact Us</legend>
+        <form
+          onSubmit={handleSubmit}
+          className="bg-white shadow-xl rounded-2xl p-8 md:p-12 max-w-3xl mx-auto"
+          data-aos="fade-up"
+        >
+          <h2 className="text-4xl font-bold text-teal-600 text-center mb-8 border-b-4 pb-4 border-teal-400">
+            Contact Us
+          </h2>
 
+          <div className="space-y-6">
             {/* Name */}
-            <div className="w-full mb-4">
-              <label htmlFor="name" className="font-semibold text-xl text-gray-700">Name:</label>
-              <input
-                name="name"
-                type="text"
-                value={formData.name}
-                onChange={handleChange}
-                placeholder="Enter your name here"
-                required
-                className="mt-2 w-full px-6 py-3 rounded-lg border-2 border-gray-300 focus:border-teal-500 focus:outline-none"
-              />
+            <div className="relative">
+              <label className="block mb-2 text-lg font-semibold text-gray-700">Name</label>
+              <div className="flex items-center border-2 border-gray-300 rounded-lg px-4 py-2 focus-within:border-teal-500">
+                <FaUser className="text-gray-400 mr-3" />
+                <input
+                  type="text"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  placeholder="Your Name"
+                  required
+                  className="w-full outline-none text-gray-700 bg-transparent"
+                />
+              </div>
             </div>
 
             {/* Email */}
-            <div className="w-full mb-4">
-              <label htmlFor="email" className="font-semibold text-xl text-gray-700">Email:</label>
-              <input
-                name="email"
-                type="email"
-                value={formData.email}
-                onChange={handleChange}
-                placeholder="Enter your email here"
-                required
-                className="mt-2 w-full px-6 py-3 rounded-lg border-2 border-gray-300 focus:border-teal-500 focus:outline-none"
-              />
+            <div className="relative">
+              <label className="block mb-2 text-lg font-semibold text-gray-700">Email</label>
+              <div className="flex items-center border-2 border-gray-300 rounded-lg px-4 py-2 focus-within:border-teal-500">
+                <FaEnvelope className="text-gray-400 mr-3" />
+                <input
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  placeholder="you@example.com"
+                  required
+                  className="w-full outline-none text-gray-700 bg-transparent"
+                />
+              </div>
             </div>
 
             {/* Phone */}
-            <div className="w-full mb-4">
-              <label htmlFor="phone" className="font-semibold text-xl text-gray-700">Phone Number:</label>
-              <input
-                name="phone"
-                type="text"
-                value={formData.phone}
-                onChange={handleChange}
-                placeholder="Enter your phone number here"
-                required
-                className="mt-2 w-full px-6 py-3 rounded-lg border-2 border-gray-300 focus:border-teal-500 focus:outline-none"
-              />
+            <div className="relative">
+              <label className="block mb-2 text-lg font-semibold text-gray-700">Phone</label>
+              <div className="flex items-center border-2 border-gray-300 rounded-lg px-4 py-2 focus-within:border-teal-500">
+                <FaPhoneAlt className="text-gray-400 mr-3" />
+                <input
+                  type="text"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  placeholder="+92 300 1234567"
+                  required
+                  className="w-full outline-none text-gray-700 bg-transparent"
+                />
+              </div>
             </div>
 
             {/* Message */}
-            <div className="w-full mb-6">
-              <label htmlFor="message" className="font-semibold text-xl text-gray-700">Message:</label>
-              <textarea
-                name="message"
-                value={formData.message}
-                onChange={handleChange}
-                placeholder="Your message"
-                rows={5}
-                required
-                className="mt-2 w-full px-6 py-3 rounded-lg border-2 border-gray-300 focus:border-teal-500 focus:outline-none"
-              />
+            <div className="relative">
+              <label className="block mb-2 text-lg font-semibold text-gray-700">Message</label>
+              <div className="flex items-start border-2 border-gray-300 rounded-lg px-4 py-2 focus-within:border-teal-500">
+                <FaCommentDots className="text-gray-400 mt-1 mr-3" />
+                <textarea
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  placeholder="Write your message here..."
+                  rows={5}
+                  required
+                  className="w-full outline-none text-gray-700 bg-transparent resize-none"
+                />
+              </div>
             </div>
 
             {/* Submit Button */}
-            <button
-              type="submit"
-              className="bg-teal-600  hover:bg-yellow-400 py-3 px-8 rounded-lg text-white text-xl  font-semibold hover:scale-105 transition-transform duration-300 hover:shadow-lg focus:outline-none"
-            >
-              Send Message
-            </button>
-          </fieldset>
+            <div className="text-center pt-4">
+              <button
+                type="submit"
+                className="bg-teal-600 hover:bg-teal-500 text-white px-8 py-3 rounded-lg text-lg font-semibold shadow-md hover:scale-105 transition duration-300"
+              >
+                Send Message
+              </button>
+            </div>
+          </div>
         </form>
       </Wrapper>
     </section>
@@ -124,5 +140,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
-

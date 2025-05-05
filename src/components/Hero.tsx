@@ -7,7 +7,7 @@ import Wrapper from './Wrapper';
 import Image from 'next/image';
 
 const Hero = () => {
-  const header = "I am Ali Akbar Brohi \n Frontend Web Developer";
+  // const header = "I am Ali Akbar Brohi \n Frontend Web Developer";
 
   return (
     <section className="bg-gradient-to-r from-teal-500 to-blue-500 py-16 px-4 sm:px-6 lg:px-8 w-full sm:w-auto">
@@ -17,9 +17,10 @@ const Hero = () => {
        
           <div className="w-full md:w-1/2 text-center md:text-left">
             <h1 className="text-black font-bold text-3xl sm:text-4xl md:text-5xl whitespace-pre-line leading-tight">
+              <h1 className='text-6xl text-yellow-300'><span className='text-white'>HI ,I&apos;M</span> ALI AKBAR BROHI</h1>
               <Typewriter
                 options={{
-                  strings: [header],
+                  strings: ["FRONTEND DEVELOPER","PROGAMMER","CODER","WEB DEVELOPER"],
                   autoStart: true,
                   loop: true,
                   delay: 100,
