@@ -51,23 +51,23 @@ const Header = () => {
 
             <SheetContent side="left" className="w-64 sm:w-72 bg-white">
               <SheetHeader>
-                <SheetTitle className="text-1xl font-bold text-center mt-4">Ali Akbar Brohi</SheetTitle>
+                <SheetTitle className="text-1xl font-bold text-center mt-4">Ali AKBAR BROHI</SheetTitle>
                 <SheetDescription asChild>
                   <nav className="mt-6">
                     <ul className="flex flex-col gap-y-12 text-center">
                       <li>
                         <Link href="/" className="text-xl font-bold  hover:text-yellow-600 hover:border-b-5 border-yellow-600  transition duration-300">
-                          Home
+                          HOME
                         </Link>
                       </li>
                       <li>
                         <Link href="/About" className="text-xl font-bold  hover:text-yellow-600 hover:border-b-5 border-yellow-600  transition duration-300">
-                          About
+                          ABOUT
                         </Link>
                       </li>
                       <li>
                         <Link href="/Contact" className="text-xl font-bold  hover:text-yellow-600 hover:border-b-5 border-yellow-600  transition duration-300">
-                          Contact
+                          CONTACT
                         </Link>
                       </li>
                     </ul>

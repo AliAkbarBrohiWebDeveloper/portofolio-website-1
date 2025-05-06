@@ -20,7 +20,7 @@ const Hero = () => {
               <h1 className='text-3xl md:text-5xl text-yellow-300'><span className='text-white'>HI ,I&apos;M</span> ALI AKBAR BROHI</h1>
               <Typewriter
                 options={{
-                  strings: ["FRONTEND DEVELOPER","PROGAMMER","CODER","WEB DEVELOPER"],
+                  strings: ["FRONTEND DEVELOPER","PROGRAMMER","CODER","WEB DEVELOPER"],
                   autoStart: true,
                   loop: true,
                   delay: 100,
@@ -33,7 +33,7 @@ const Hero = () => {
             </p>
 
             {/* Buttons */}
-            <div className="mt-8 flex flex-col sm:flex-row justify-center md:justify-start gap-4">
+            <div className="mt-8 flex flex-col sm:flex-row justify-center md:justify-start gap-4 ">
               <button className="py-2 px-6 bg-teal-600 hover:bg-black text-white text-base sm:text-lg font-bold rounded-2xl shadow-lg  transition-all duration-300 transform hover:scale-105">
                 View My Work
               </button>
